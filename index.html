@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"> 
+    <meta content="telephone=no" name="format-detection">  
+    <meta content="email=no" name="format-detection"> 
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>test</title>
+    <script>
+    ;(function(i,g){var a={};var k,d,e,b,j,h=g.devicePixelRatio||1;docEl=i.documentElement,metaEl=i.querySelector('meta[name="viewport"]');resizeEvt="orientationchange" in window?"orientationchange":"resize",j=docEl.clientWidth;h=h>=3?3:(h>=2?2:1);a.pc=function(){function m(){var o=window.navigator.userAgent;console.log(o);var n=false;var p=o.match(/iphone|android|ipad|windows phone/gi);n=p?0:1;return n}var l=m();if(l){console.log("当前是PC")}else{console.log("当前是移动")}};function f(m,l,n){return m>l?l:(m<n?n:m)}var c=function(){h=h>=3?3:(h>=2?2:1);docEl.setAttribute("data-dpr",h);if(!j){return}b=j>640?640:(j<300?300:j);k=100*b*h/640;d=1/h;docEl.style.fontSize=k+"px";metaEl.setAttribute("content","width=device-width,initial-scale="+d+",maximum-scale="+d+",minimum-scale="+d+",user-scalable=no");docEl.setAttribute("data-dpr",h)};g.addEventListener(resizeEvt,function(){h=g.devicePixelRatio||1;h=h>=3?3:(h>=2?2:1);var l=document.documentElement.getBoundingClientRect().width||window.innerWidth;j=l/h;b=f(j,640,300);clearTimeout(e);e=setTimeout(c,33)},false);c();setTimeout(function(){c();var m=document.getElementById("loadMask");if(m){m.style.display="none";m.parentNode.removeChild(m)}},333);i.addEventListener("DOMContentLoaded",function(){c();var m=document.getElementById("loadMask");if(m){m.parentNode.removeChild(m)}else{return}},false)})(document,window);
+    /*;(function(i,g){var a={};var k,d,e,b,j,h=g.devicePixelRatio||1;docEl=i.documentElement,metaEl=i.querySelector('meta[name="viewport"]');resizeEvt="orientationchange" in window?"orientationchange":"resize",j=docEl.clientWidth;h=h>=3?3:(h>=2?2:1);a.pc=function(){function m(){var o=window.navigator.userAgent;console.log(o);var n=false;var p=o.match(/iphone|android|ipad|windows phone/gi);n=p?0:1;return n}var l=m();if(l){console.log("当前是PC")}else{console.log("当前是移动")}};function f(m,l,n){return m>l?l:(m<n?n:m)}var c=function(){h=h>=3?3:(h>=2?2:1);docEl.setAttribute("data-dpr",h);if(!j){return}b=j>640?640:(j<300?300:j);k=100*b*h/640;d=1/h;docEl.style.fontSize=k+"px";metaEl.setAttribute("content","width=device-width,initial-scale="+d+",maximum-scale="+d+",minimum-scale="+d+",user-scalable=no");docEl.setAttribute("data-dpr",h)};g.addEventListener(resizeEvt,function(){h=g.devicePixelRatio||1;h=h>=3?3:(h>=2?2:1);var l=document.documentElement.getBoundingClientRect().width||window.innerWidth;j=l/h;b=f(j,640,300);clearTimeout(e);e=setTimeout(c,33)},false);window.addEventListener("load",c,false);setTimeout(function(){c();var m=document.getElementById("loadMask");m.style.display="none";m.parentNode.removeChild(m)},333);i.addEventListener("DOMContentLoaded",c,false)})(document,window);*/
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/TouchSlide.1.1.js"></script>
+
+
+</head>
+<body>
+    <div class="loadMask" id="loadMask" style="position:fixed;width:100%;height:100%;top:0;left:0;background:#fff;z-index:1000;"></div>
+    
+    <div style="position:absolute;top:-500px"><img src="http://wenxiang.4006188666.com/images/ad2016/baot.jpg"></div>
+
+    <div class="page">
+        <!--头条-->
+        <div class="tou_bar toutiao max_640" id="toutiao">
+           <img class="top_bg" src="images/toutiao2.png" alt="" />
+        </div>
+        <header class="head fix_item head_fixed">
+            <div class="menu pos_a"><i class="iconfont">&#xe700;</i></div>
+            <h4 class="logo"><img src="images/logo_h.png" alt=""></h4>
+            <div class="search pos_a"><i class="iconfont">&#xe6fe;</i></div>
+        </header>
+        
+        <div class="hl_content wrap">
+            <!--轮播广告-->
+            <div class="switch_photo">
+                <div id="slideBox" class="slideBox">
+                  <div class="bd">
+                    <ul>
+                      <li>
+                        <a class="pic" href="#"><img src="images/pat.jpg" /></a>
+                      </li>
+                      <li>
+                        <a class="pic" href="#"><img src="images/bao.jpg"/></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="hd">
+                    <ul></ul>
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  TouchSlide({ 
+                    slideCell:"#slideBox",
+                    titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                    mainCell:".bd ul", 
+                    effect:"leftLoop", 
+                    autoPage:true,//自动分页
+                    autoPlay:true //自动播放
+                    //在库文件设置了4000ms
+                  });
+                </script>
+            </div>
+            <!--项目导航-->
+            <div class="item_area">
+                <ul>
+                    <li>
+                        <a href="javascript:;"><span>大</span><p>香香</p></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><span>王</span><p>友友</p></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><span>叫</span><p>慧慧</p></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><span>我</span><p>棵棵</p></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:;"><span>来</span><p>啦啦</p></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><span>巡</span><p>呵呵</p></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><span>山</span><p>嘎嘎</p></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><span>啦</span><p>哈哈</p></a>
+                    </li>
+                </ul>
+            </div>
+            <!--产品可滑动列表-->
+            
+            <div class="div2">动态更改html元素大小</div>
+            <div class="div3"></div>
+            <div class="div4"></div>
+            <img class="img1" src="http://www.baidu.com/img/bd_logo1.png" alt="" />
+        </div>
+        
+        <footer class="foot fix_item">
+            <!-- <a class="act" href="javascript:;"><i class="iconfont">&#xe6b8;</i><span>首页</span></a> -->
+            <a class="act" href="javascript:;"><i class="iconfont">&#xe6bb;</i><span>首页</span></a>
+            <a href="javascript:;"><i class="iconfont">&#xe729;</i><span>分类</span></a>
+            <a href="javascript:;"><i class="iconfont">&#xe6af;</i><span>购物车</span></a>
+            <a href="javascript:;"><i class="iconfont">&#xe686;</i><span>我的</span></a>
+        </footer>
+    </div>
+</body>
+<!-- <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+<script src="js/jquery-1.10.1.min.js"></script>
+<script>
+   //顶部固定栏固定后位置的设置
+   function set_fixed_bar(q,p,o){var j=$(q),i=$(p),h=$(o),k=$(".wrap");var f=j.outerHeight(true);var l=i.outerHeight(true);var n=h.outerHeight(true);var e='<div class="a1" style="height:'+f+'px;"></div>';var g=h.next();if(j.length>0){if($(".a1").length==0){$(q).after(e)}else{window.addEventListener("orientationchange" in window?"orientationchange":"resize",function(){var a=j.outerHeight(true);$(".a1").height(a)},false)}if($(p).length>0){var r=$(p).length?f:0;i.css("top",r)}else{k.css("margin-top",0)}}else{if(!i.length){k.css("margin-top",0)}}if($(o).length>0){var d=$(o).offset().top;var m=d-(f+l);document.addEventListener("scroll",function(){var a=document.documentElement.scrollTop||document.body.scrollTop;if(a>=m){h.addClass("fixed_hd").css({top:f+l});g.css("margin-top",n)}else{h.removeClass("fixed_hd");g.css("margin-top",0)}},false)}}set_fixed_bar("#toutiao",".head_fixed",".tab_hd");document.addEventListener("DOMContentLoaded",function(){set_fixed_bar("#toutiao",".head_fixed",".tab_hd")},false);$(window).resize(function(){set_fixed_bar("#toutiao",".head_fixed",".tab_hd")});
+   /*function set_fixed_bar(q,p,o){var j=$(q),i=$(p),h=$(o),k=$(".wrap");var f=j.outerHeight(true);var l=i.outerHeight(true);var n=h.outerHeight(true);var e='<div class="a1" style="height:'+f+'px;"></div>';var g=h.next();if(j.length>0){if($(".a1").length==0){$(q).after(e)}else{return}if($(p).length>0){var r=$(p).length?f:0;i.css("top",r)}else{k.css("margin-top",0)}}else{if(!i.length){k.css("margin-top",0)}}if($(o).length>0){var d=$(o).offset().top;var m=d-(f+l);document.addEventListener("scroll",function(){var a=document.documentElement.scrollTop||document.body.scrollTop;if(a>=m){h.addClass("fixed_hd").css({top:f+l});g.css("margin-top",n)}else{h.removeClass("fixed_hd");g.css("margin-top",0)}},false)}}document.addEventListener("DOMContentLoaded",function(){set_fixed_bar("#toutiao",".head_fixed",".tab_hd")},false);$(window).resize(function(){set_fixed_bar("#toutiao",".head_fixed",".tab_hd")});*/
+</script>
+
+<script>
+    //获取实时的设置为固定的某个元素的高度或者宽度等
+    function hh(obj){
+        return obj.outerHeight(true);
+    }
+    function getH(){
+        var $tou = $('#toutiao');
+        //alert(hh($tou));
+    };
+    $(function(){
+        set_fixed_bar("#toutiao",".head_fixed",".tab_hd");
+        getH();
+    });
+
+
+</script>
+
+
+</html>
